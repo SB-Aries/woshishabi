@@ -88,7 +88,7 @@
 
 #### WapitiCore 集成
 
-代码位置：`/Users/aries/Downloads/wapiti-master/web_interface/backend/app/api/endpoints/tools.py`
+代码位置：`/web_interface/backend/app/api/endpoints/tools.py`
 
 ```python
 # 添加 WapitiCore 到 Python 路径
@@ -317,7 +317,7 @@ async def perform_port_scan(target: str, ports: List[int], scan_type: str, timeo
 
 #### JWT 令牌生成
 
-代码位置：`/Users/aries/Downloads/wapiti-master/web_interface/backend/app/api/endpoints/auth.py`
+代码位置：`/web_interface/backend/app/api/endpoints/auth.py`
 
 ```python
 def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
@@ -400,7 +400,7 @@ async def refresh_access_token(refresh_token_request: RefreshTokenRequest):
 
 #### 认证状态管理
 
-代码位置：`/Users/aries/Downloads/wapiti-master/web_interface/frontend/src/App.jsx`
+代码位置：`/web_interface/frontend/src/App.jsx`
 
 ```javascript
 // 用户认证状态
@@ -433,7 +433,7 @@ useEffect(() => {
 
 #### Axios 请求拦截器
 
-代码位置：`/Users/aries/Downloads/wapiti-master/web_interface/frontend/src/utils/api.js`
+代码位置：`/web_interface/frontend/src/utils/api.js`
 
 ```javascript
 import axios from 'axios';
@@ -492,7 +492,7 @@ api.interceptors.response.use(
 
 ### CORS 配置
 
-代码位置：`/Users/aries/Downloads/wapiti-master/web_interface/backend/app/main.py`
+代码位置：`/web_interface/backend/app/main.py`
 
 ```python
 # Configure CORS
@@ -549,7 +549,7 @@ if len(ports) > 1000:
 
 ```bash
 # 安装依赖
-cd /Users/aries/Downloads/wapiti-master/web_interface/backend
+cd /web_interface/backend
 pip install -r requirements.txt
 # 启动开发服务器
 uvicorn app.main:app --reload --port 8000
@@ -559,7 +559,7 @@ uvicorn app.main:app --reload --port 8000
 
 ```bash
 # 安装依赖
-cd /Users/aries/Downloads/wapiti-master/web_interface/frontend
+cd /web_interface/frontend
 npm install
 # 启动开发服务器
 npm run dev
@@ -571,7 +571,7 @@ npm run dev
 
 ```bash
 # 构建前端应用
-cd /Users/aries/Downloads/wapiti-master/web_interface/frontend
+cd /web_interface/frontend
 npm run build
 ```
 
@@ -581,7 +581,7 @@ npm run build
 
 ```bash
 # 使用 Uvicorn 部署
-cd /Users/aries/Downloads/wapiti-master/web_interface/backend
+cd /web_interface/backend
 uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 4
 ```
 
