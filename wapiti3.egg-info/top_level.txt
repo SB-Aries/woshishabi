@@ -1,0 +1,6 @@
+endpoint
+logs
+reports
+test_report
+wapitiCore
+web_interface

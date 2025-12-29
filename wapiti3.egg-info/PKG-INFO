@@ -1,0 +1,53 @@
+Metadata-Version: 2.4
+Name: wapiti3
+Version: 3.2.10
+Summary: A web application vulnerability scanner
+Author-email: Nicolas Surribas <nicolas.surribas@gmail.com>
+Project-URL: homepage, https://wapiti-scanner.github.io/
+Project-URL: repository, https://github.com/wapiti-scanner/wapiti
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Security
+Classifier: Topic :: Internet :: WWW/HTTP :: Indexing/Search
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: <3.15,>=3.12
+Description-Content-Type: text/x-rst
+Requires-Dist: aiosqlite<0.22.0,>=0.19
+Requires-Dist: playwright<2.0,>=1.42
+Requires-Dist: beautifulsoup4<5.0,>=4.12
+Requires-Dist: browser-cookie3<0.21,>=0.19
+Requires-Dist: dnspython<3.0,>=2.6
+Requires-Dist: httpcore<2.0,>=1.0
+Requires-Dist: httpx[brotli,socks]<1.0,>=0.27
+Requires-Dist: httpx-ntlm<2.0,>=1.4
+Requires-Dist: mako<2.0,>=1.2
+Requires-Dist: mitmproxy<13.0,>=12.0
+Requires-Dist: packaging<26.0,>=23.0
+Requires-Dist: sqlalchemy<3.0,>=2.0
+Requires-Dist: tld<0.14,>=0.13
+Requires-Dist: wapiti-swagger<0.2.0,>=0.1.9
+Provides-Extra: test
+Requires-Dist: pytest<9.0,>=8.0; extra == "test"
+Requires-Dist: pytest-cov<5.0,>=4.1; extra == "test"
+Requires-Dist: pytest-asyncio<1.0,>=0.23; extra == "test"
+Requires-Dist: respx<1.0,>=0.22; extra == "test"
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: wheel; extra == "dev"
+Requires-Dist: pylint<4.0,>=3.2; extra == "dev"
+Requires-Dist: pytest<9.0,>=8.0; extra == "dev"
+Requires-Dist: pytest-cov<5.0,>=4.1; extra == "dev"
+Requires-Dist: pytest-asyncio<1.0,>=0.23; extra == "dev"
+Requires-Dist: respx<1.0,>=0.22; extra == "dev"
+Requires-Dist: humanize<5.0,>=4.5; extra == "dev"

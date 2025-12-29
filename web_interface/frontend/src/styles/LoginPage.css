@@ -1,0 +1,86 @@
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 库洛米主题登录容器特殊样式 */
+[data-theme="kuromi"] .login-container {
+  background-color: transparent;
+}
+
+/* 库洛米主题登录页面字体颜色增强 */
+[data-theme="kuromi"] .login-title {
+  color: #ffffff !important;
+}
+
+[data-theme="kuromi"] .login-header .ant-typography-secondary {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+[data-theme="kuromi"] .login-form .ant-form-item-label > label {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+[data-theme="kuromi"] .login-footer .ant-typography-secondary {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.login-row {
+  width: 100%;
+  height: 100%;
+}
+
+.login-card {
+  border-radius: 12px;
+  box-shadow: var(--shadow-medium);
+  padding: 32px;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.login-title {
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.login-button {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  height: 40px;
+  font-weight: 600;
+}
+
+.login-button:hover {
+  background-color: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
+}
+
+.login-footer {
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .login-card {
+    margin: 0 16px;
+    padding: 24px;
+  }
+  
+  .login-header {
+    margin-bottom: 24px;
+  }
+}
